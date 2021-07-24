@@ -8,13 +8,14 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class nave extends Actor
 {
+    boolean puedeDisparar = true;
     public nave(){
         GreenfootImage myImage = getImage();
         myImage.scale(75,75);
     }
     public void act(){
         move();
-        bomba();
+        disparar();
     }
     public void move()
     {
@@ -36,9 +37,13 @@ public class nave extends Actor
         setLocation(x,y);
     }
     
-    public void bomba(){
-        if (Greenfoot.isKeyDown("space")){
-            getWorld().addObject(new bomba(), getX(), getY());
+    public void disparar(){
+        if (Greenfoot.isKeyDown("space") && puedeDisparar == true){
+            getWorld().addObject(new disparo(), getX(), getY());
+            puedeDisparar = false;
+        }
+        else if (!Greenfoot.isKeyDown("space")){
+            puedeDisparar = true; 
         }
     }
 }

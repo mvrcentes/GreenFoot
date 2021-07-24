@@ -2,9 +2,9 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 public class asteroide1 extends asteoride
 {
-    public void asteroide1(){
+    public asteroide1(){
         GreenfootImage myImage2 = getImage();
-        myImage2.scale(15,15);
+        myImage2.scale(25,25);
         
         
     }
@@ -14,5 +14,4 @@ public class asteroide1 extends asteoride
         movimiento();
         borrar();
     }
-    
 }

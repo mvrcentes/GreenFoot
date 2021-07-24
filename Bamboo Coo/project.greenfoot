@@ -1,7 +1,7 @@
 #Greenfoot project file
-class.MyWorld.image=Espacio.png
+class.MyWorld.image=wallpaperbetter.jpg
 class.asteoride.image=asteroide.png
-class.bomba.image=bomb.png
+class.disparo.image=proyectil.png
 class.nave.image=nave.png
 dependency1.from=MyWorld
 dependency1.to=nave
@@ -45,14 +45,14 @@ target2.width=120
 target2.x=0
 target2.y=0
 target3.height=70
-target3.name=bomba
+target3.name=asteoride
 target3.showInterface=false
 target3.type=ClassTarget
 target3.width=120
 target3.x=0
 target3.y=0
 target4.height=70
-target4.name=asteoride
+target4.name=disparo
 target4.showInterface=false
 target4.type=ClassTarget
 target4.width=120

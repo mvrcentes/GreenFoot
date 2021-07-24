@@ -10,7 +10,7 @@ public class asteoride extends Actor
 {
   
     public void act(){
-
+        
     }
     
     public void movimiento(){        
@@ -22,5 +22,6 @@ public class asteoride extends Actor
         if (getY() == 499){
             getWorld().removeObject(this);
         }
-    }
+    } 
+    
 }
