@@ -16,6 +16,7 @@ public class nave extends Actor
     public void act(){
         move();
         disparar();
+        gameover(); 
     }
     public void move()
     {
@@ -39,11 +40,18 @@ public class nave extends Actor
     
     public void disparar(){
         if (Greenfoot.isKeyDown("space") && puedeDisparar == true){
-            getWorld().addObject(new disparo(), getX(), getY());
+            getWorld().addObject(new Disparo(), getX(), getY());
             puedeDisparar = false;
         }
         else if (!Greenfoot.isKeyDown("space")){
             puedeDisparar = true; 
         }
+    }
+    
+    public void gameover(){
+        if(isTouching(asteroide1.class)){
+            getWorld().addObject(new Gameover(), getWorld().getWidth()/2, getWorld().getHeight()/2);
+        }
+
     }
 }

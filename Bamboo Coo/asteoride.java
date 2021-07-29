@@ -14,7 +14,7 @@ public class asteoride extends Actor
     }
     
     public void movimiento(){        
-        setLocation(getX(), getY()+10);
+        setLocation(getX(), getY()+2);
         
     }
     

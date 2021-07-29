@@ -1,17 +1,6 @@
-import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
-
-/**
- * Write a description of class disparo here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
- */
-public class disparo extends Actor
+import greenfoot.*;  
+public class Disparo extends Actor
 {
-    /**
-     * Act - do whatever the disparo wants to do. This method is called whenever
-     * the 'Act' or 'Run' button gets pressed in the environment.
-     */
     public void act()
     {
         disparo_movimiento();
@@ -19,7 +8,7 @@ public class disparo extends Actor
         borrar();
     }
     
-    public disparo(){
+    public Disparo(){
         GreenfootImage myImage2 = getImage();
         myImage2.scale(25,25);
     }
@@ -28,20 +17,9 @@ public class disparo extends Actor
         setLocation(getX(), getY() - 5);
     }
     
-    public void borrar(){
-        
-    
-    //public void tocar_enemigo(){
-        Actor asteroide = getOneIntersectingObject(asteoride.class);
-        
-        if(asteroide != null){
-            getWorld().removeObject(asteroide);
+    public void borrar(){    
+        if (getY() == 0){
             getWorld().removeObject(this);
-        }
-        
-        else if (getY() == 0){
-            getWorld().removeObject(this);
-        //}
-    } 
+        } 
     }
 }
