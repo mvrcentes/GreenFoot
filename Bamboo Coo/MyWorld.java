@@ -12,7 +12,7 @@ public class MyWorld extends World
         backgroundMusic.setVolume(50);
         nave ship1 = new nave();
         addObject(ship1,500,250); 
-        addObject(contador, 900,50); 
+        addObject(contador, 850,50); 
     }
     
     public void obstaculo(){
